@@ -1,0 +1,29 @@
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 425px) {
+    .wrapper-items {
+        gap: 200px;
+    }
+    #greeting {
+        letter-spacing: 3px;
+    }
+    .main-social-media ul {
+        font-size: 14px;
+    }
+    .arrow-down {
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .header__container {
+        justify-content: center;
+    }
+    .header__container-img a img {
+        margin-bottom: 20px;
+    }
+}

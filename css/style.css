@@ -12,6 +12,7 @@ img {
     max-width: 100%;
     width: auto;
     height: auto;
+    image-rendering: optimizeQuality;
 }
 a {
     text-decoration: none;
@@ -22,11 +23,31 @@ p {
 li {
     list-style: none;
 }
+sub:hover,
 sup:hover {
     color: aqua;
     cursor: pointer;
 }
+button {
+    cursor: pointer;
+}
+textarea {
+    resize: none;
+}
+form,
+textarea,
+input {
+    color: #000;
+    width: 100%;
+    outline: none;
+}
+legend {
+    text-align: center;
+}
 
+::placeholder {
+    color: aqua;
+}
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -49,6 +70,70 @@ sup:hover {
     color: aqua;
     scroll-snap-align: start;
 }
+
+/* PRELOADER */
+
+/* .preloader {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(32,128,123);
+    background: linear-gradient(180deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
+}
+.preloader__loader, .preloader__percents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.preloader__percents {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.preloader__hide {
+    display: none;
+}
+
+
+@keyframes ldio-xkx2bvx55n {
+  0% { transform: translate(-50%,-50%) rotate(0deg); }
+  100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+.ldio-xkx2bvx55n div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #089ccc;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+.ldio-xkx2bvx55n div {
+    animation: ldio-xkx2bvx55n 1s linear infinite;
+    top: 100px;
+    left: 100px
+}
+.loadingio-spinner-rolling-n2bqdov5erd {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+.ldio-xkx2bvx55n {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+.ldio-xkx2bvx55n div { box-sizing: content-box; } */
+
+/* /PRELOADER */
 
 .odd:hover, .even:hover {
     transform: scale(1.3);
@@ -79,7 +164,7 @@ sup:hover {
     background: rgb(32,128,123);
     background: linear-gradient(180deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
     align-items: center;
-    gap: 100px;
+    gap: 70px;
 }
 .wrapper-items4 {
     background: rgb(32,128,123);
@@ -352,7 +437,7 @@ sup:hover {
     margin: 10px 5px;
 }
 .main-social-media ul li a i {
-    transition: all 1s;
+    transition: all .6s;
 }
 .main-social-media ul li a i:hover::after {
     content: attr(data-title);
@@ -389,12 +474,23 @@ sup:hover {
     display: flex;
     justify-content: center;
     align-items: start;
-    /* flex-wrap: wrap; */
+    flex-grow: 1;
+}
+.about-me-container div {
+    margin: 0px 13px;
 }
 .about-me-container-title {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+.about-me-container-info {
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom,purple,aqua ) 1 100%;
+    border-right: none;
+    padding-left: 10px;
+
 }
 .about-me-container-info p{
     padding: 25px 5px;
@@ -418,7 +514,7 @@ sup:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 35px 0px;
+    margin: 40px 0px;
 }
 .about-me-container-list li {
     background-color: #2b9bb8;
@@ -435,3 +531,89 @@ sup:hover {
 }
 
     /* /Section 2 - ABOUT ME*/
+    
+    
+    /* Section 3 - MY PROJECTS*/
+
+.projects__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1140px;
+    gap: 50px;
+}
+.projects__container-item {
+    max-width: 500px;
+
+}
+.projects__container-item-img img{
+        -webkit-box-shadow: 0px 0px 30px 22px rgba(34, 60, 80, 0.4);
+      -moz-box-shadow: 0px 0px 30px 22px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 0px 30px 22px rgba(34, 60, 80, 0.4);
+    border: solid 2px aqua;
+    transition: all 0.5s;
+}
+.projects__container-item-img img:hover {
+    transform: scale(1.2);
+}
+.projects__container-item-button {
+    text-align: center;
+    margin-inline: auto;
+}
+.projects__container-item-button button{
+    color: #fff;
+    padding: 5px 50px;
+    margin: 20px 5px;
+    background: transparent;
+    border: 1px solid aqua;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+.projects__container-item-button button:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
+
+    /* /Section 3 - MY PROJECTS*/
+
+    /* Section 4 - CONTACT*/
+
+.form__container {
+    max-width: 1140px;
+}
+.form__container form{
+    text-align: center;
+}
+.form__container form input {
+    width: 100%;
+}
+.form__container-fieldset {
+    padding: 20px;
+    border-radius: 50px;
+}
+.form__container-fieldset input,
+.form__container-fieldset textarea{
+    color: #fff;
+    background: transparent;
+    border: 1px solid aqua;
+    padding: 15px 0 15px 10px;
+    margin: 20px 0px;
+    border-radius: 30px;
+}
+.form__container-fieldset button {
+    padding: 3px 50px;
+    background: transparent;
+    border: 1px solid aqua;
+    transition: all 0.3s;
+    border-radius: 30px;
+}
+.form__container-fieldset button:hover {
+    color: aqua;
+    transform: scale(1.1);
+}
+
+    /* /Section 4 - CONTACT*/
+

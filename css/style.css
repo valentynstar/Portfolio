@@ -378,7 +378,6 @@ legend {
     display: block;
     position: relative;
     right: -50%;
-    top: -10%;
     transform: translate(-50%, -50%);
 }
 .arrow-down-item {

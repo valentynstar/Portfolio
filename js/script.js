@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
 
 
-    // PRELOADER
+    // /PRELOADER
     
     // Background animation 
 
@@ -81,22 +81,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Projects Buttons
 
-    // const projectButtons = document.querySelectorAll('[data-projectsBtn]');
-    // const projectDetails = document.querySelector('.projects-details');
-    // const closeButton = document.querySelector('.close-button');
+    const projectsBtn = document.querySelectorAll('.projectsBtn');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close');
 
-    // projectButtons.forEach((button) => {
-    //     button.addEventListener('click', () => {
-    //         projectDetails.style.display = 'block';
-    //         projectDetails.classList.add('fadeIn');
-    //         console.log(button)
-    //     });
-    // });
+    projectsBtn.forEach((button) => {
+        button.addEventListener('click', () => {
+            const buttonAttr = button.getAttribute('data-projectsBtn');
+            const modal = document.getElementById(buttonAttr);
+            modal.style.display = 'block';
+        });
+    });
 
-    // closeButton.addEventListener('click', () => {
-    //     projectDetails.style.display = 'none';
-    //     projectDetails.classList.remove('fadeIn');
-    // });
+    closeButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+
+    modals.forEach((modal) => {
+        modal.addEventListener('click', (e) => {
+            const target = e.target;
+
+            if(target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });  
 
     // /Projects Buttons
 

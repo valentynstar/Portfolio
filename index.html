@@ -142,12 +142,13 @@
 
             <div class="projects__container">
 
+                <!-- Modal Elements -->
                 <div class="projects__container-item">
                     <div class="projects__container-item-img">
                         <img src="img/ActiveBox.png" alt="ActiveBox logo">
                     </div>
                     <div class="projects__container-item-button">
-                        <button data-projectsBtn="projects_first">more</button>
+                        <button data-projectsBtn="projectsModal1" class="projectsBtn">more</button>
                     </div>
                 </div>
 
@@ -156,26 +157,141 @@
                         <img src="img/CalculatorPhone.png" alt="CalculatorPhone logo">
                     </div>
                     <div class="projects__container-item-button">
-                        <button data-projectsBtn="projects_second">more</button>
+                        <button data-projectsBtn="projectsModal2" class="projectsBtn">more</button>
                     </div>
                 </div>
 
                 <div class="projects__container-item">
                     <div class="projects__container-item-img">
-                        <img src="img/Trade Company.jpg" alt="Trade Company logo">
+                        <img src="img/TradeCompany.jpg" alt="Trade Company logo">
                     </div>
                     <div class="projects__container-item-button">
-                        <button data-projectsBtn="projects_third">more</button>
+                        <button data-projectsBtn="projectsModal3" class="projectsBtn">more</button>
                     </div>
                 </div>
 
-                <!-- Добавьте блок для детальной информации, который будет скрыт по умолчанию -->
-                <!-- <div class="project-details">
-                    <div class="project-details-content">
-                        <p>This is project details.</p>
-                        <button class="close-button">Close</button>
+                <!-- /Modal Elements -->
+
+                <!-- Modal Content -->
+
+                <div id="projectsModal1" class="modal">
+                    <div class="modal__content">
+                        <span class="close">&times;</span>
+                        <img src="img/ActiveBox.png" alt="ActiveBox logo">
+                        <h2>ActiveBox</h2>
+                        <hr>
+                        <div class="modal__description">
+                            <h4>Description</h4>
+                            <p>Hello! Today, I'd like to introduce you to an excellent web template called ActiveBox. This template is a real find for those who want to create a creative and modern website with minimal effort.</p>
+                            <p>ActiveBox offers several key features that make it a true winner. First and foremost, it's the ease of customization. You can easily adjust the design and appearance of your site to perfectly match your needs, without the need for in-depth web development knowledge.</p>
+                            <p>ActiveBox's design is immediately eye-catching. It's modern and stylish, perfect for making an impression and grabbing visitors' attention right from the start.</p>
+                        </div>
+                        <hr>
+                        <div class="modal__languages">
+                            <h4>languages used</h4>
+                            <div class="modal__content-language">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                    <li>BootStrap</li>
+                                    <li>fancybox</li>
+                                    <li>OwlCarousel</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                       <a href="#" target="_blank" class="modal__content-btn"><button>Link</button></a>
                     </div>
-                </div> -->
+                </div>
+
+                <div id="projectsModal2" class="modal">
+                    <div class="modal__content">
+                        <span class="close">&times;</span>
+                        <img src="img/CalculatorPhone.png" alt="CalculatorPhone logo">
+                        <h2>ActiveBox</h2>
+                        <hr>
+                        <div class="modal__description">
+                            <h4>Description</h4>
+                            <p>Soon</p>
+                        </div>
+                        <hr>
+                        <div class="modal__languages">
+                            <h4>languages used</h4>
+                            <div class="modal__content-language">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                       <a href="#" target="_blank" class="modal__content-btn"><button>Link</button></a>
+                    </div>
+                </div>
+
+                <div id="projectsModal3" class="modal">
+                    <div class="modal__content">
+                        <span class="close">&times;</span>
+                        <img src="img/TradeCompany.jpg" alt="TradeCompany logo">
+                        <h2>TradeCompany</h2>
+                        <hr>
+                        <div class="modal__description">
+                            <h4>Description</h4>
+                            <p>"Introducing the HTML structure for a website named 'Trade Company.' This HTML document sets the foundation for a modern and professional website design. Let's break it down section by section:</p>
+                            <div class="modal__description-list">
+                                <ol>
+                                    <li>Document Declaration:</li>
+                                    <ul>
+                                        <li>The document begins with the declaration specifying the HTML version and language.</li>
+                                    </ul>
+                                    <li>Head Section:</li>
+                                    <ul>
+                                        <li>The head section contains various meta tags to define character encoding, compatibility, and viewport settings.</li>
+                                        <li>It sets the title of the webpage to 'Trade Company.'</li>
+                                        <li>Links to several external resources are included, such as the website favicon, CSS files, font awesome icons, and JavaScript libraries.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>The main content of the webpage is enclosed in the body section.</li>
+                                        <li>The site's header is defined at the top, featuring a logo, navigation menu, and a search block.</li>
+                                        <li>The header also includes a catchy slogan: 'We Are Creative.'</li>
+                                        <li>The following sections are included in the body: <ul>
+                                            <li>About Website: Describes the company's expertise in web design and app development, with details on user interface, user experience, and modern design.</li>
+                                            <li>Creative Portfolio: Introduces the portfolio section with a title and a brief description.</li>
+                                            <li>About Gallery: A gallery of creative work is displayed.</li>
+                                            <li>Creative Service: Details services offered, such as interactive elements, custom menus, animated counters, and more.</li>
+                                            <li>Our Clients: Showcases client logos in an owl carousel.</li>
+                                            <li>Our Team: Features team members with photos, names, and descriptions.</li>
+                                            <li>Subscribe Section: Invites users to subscribe with an email input field and a 'SEND' button.</li>
+                                        </ul></li>
+                                        <li>Finally, the footer contains links to social media profiles, copyright information, and the company's logo.</li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="modal__languages">
+                            <h4>languages used</h4>
+                            <div class="modal__content-language">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                    <li>BootStrap</li>
+                                    <li>fancybox</li>
+                                    <li>OwlCarousel</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                       <a href="#" target="_blank" class="modal__content-btn"><button>Link</button></a>
+                    </div>
+                </div>
+
+                <!-- /Modal Content -->
 
             </div>
 

@@ -142,7 +142,7 @@ legend {
     color: aqua;
 }
 .even:hover {
-    color: red;
+    color:#EE82EE;
 }
 
 .header {
@@ -158,19 +158,19 @@ legend {
     background: rgb(32,128,123);
     background: linear-gradient(0deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 .wrapper-items3 {
     background: rgb(32,128,123);
     background: linear-gradient(180deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
     align-items: center;
-    gap: 70px;
+    gap: 50px;
 }
 .wrapper-items4 {
     background: rgb(32,128,123);
     background: linear-gradient(0deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .wave-background {
@@ -305,7 +305,6 @@ legend {
 }
 
 /* Declate color shifting animation */
-
 @keyframes colorShift {
 	0%, 100% {
 			color: #098fdd;
@@ -371,7 +370,7 @@ legend {
     color:aqua;
 }
 
-    /* /TOP BUTTON */
+        /* /TOP BUTTON */
     
     /* ARROW DOWN */
 .arrow-down {
@@ -416,7 +415,7 @@ legend {
     }
 }
     
-    /* /ARROW DOWN */
+         /* /ARROW DOWN */
 
     /* Social-media */
 
@@ -450,7 +449,7 @@ legend {
 
     /* /Social-media */
 
-    /* Section 2 - ABOUT ME*/
+         /* Section 2 - ABOUT ME*/
 
 .wrapper-about-page {
     margin-inline: auto;
@@ -481,8 +480,9 @@ legend {
 .about-me-container-title {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 20px;
 }
+
 .about-me-container-info {
     border-width: 3px;
     border-style: solid;
@@ -529,10 +529,10 @@ legend {
     transform: scale(1.1);
 }
 
-    /* /Section 2 - ABOUT ME*/
+        /* /Section 2 - ABOUT ME*/
     
     
-    /* Section 3 - MY PROJECTS*/
+        /* Section 3 - MY PROJECTS*/
 
 .projects__container {
     display: flex;
@@ -574,11 +574,144 @@ legend {
     color: aqua;
     transform: scale(1.1);
 }
+    /* MODAL PROJECTS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal__content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 50px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
+}
+.modal__content h2 {
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: .2em;
+}
+.close {
+    position: absolute;
+    top: 10px; 
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal__content img {
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+    border: 1px solid #fff;
+    transition: all .6s;
+}
+.modal__content img:hover {
+    transform: scale(1.5);
+}
+.close:hover,
+.close:focus {
+    color: aqua;
+}
+.modal__content p {
+    margin: 30px;
+    text-align: justify;
+}
+.modal__content h4 {
+    margin: 20px 0;
+}
+.modal__description,
+.modal__languages {
+    margin: 20px 0;
+}
+.modal__description p {
+    font-size: clamp(.5em, 1vw, 1em);
+}
+.modal__description-list {
+    text-align: justify;
+    margin: 30px;
+    font-size: clamp(.5em, 1vw, 1em);
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.modal__description-list ol li{
+    list-style: auto;
+    margin: 10px 0px;
+}
+.modal__description-list ul li {
+    margin: 10px 0px 0px 20px;
+    list-style-type: disc;
+}
+.modal__content-language {
+    margin: 20px 0px;
+    text-align: center;
+    margin-inline: auto;
+}
+.modal__content-language ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.modal__content-language ul li {
+    border: 1px solid #fff;
+    min-width: 100px;
+    padding: 10px;
+    background: transparent;
+    cursor: crosshair;
+    transition: all .3s;
+    letter-spacing: .1em;
+}
+.modal__content-btn {
+    width: 125px;
+    padding: 5px 25px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    transition: all .3s;
+    margin: 20px;
+}
+.modal__content-btn button {
+    background: transparent;
+    border: none;
+    padding: 10px 40px;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+.modal__content-language ul li:hover {
+    background-color: #2f9786; 
+    color: aqua;
+}
+.modal__content-btn:hover {
+    background-color: #EE82EE; 
+}
+
+.modal__content-language ul li,
+.modal__content-btn {
+    border-radius: 30px;
+}
 
 
-    /* /Section 3 - MY PROJECTS*/
+    /* MODAL PROJECTS */
 
-    /* Section 4 - CONTACT*/
+        /* /Section 3 - MY PROJECTS*/
+
+        /* Section 4 - CONTACT*/
 
 .form__container {
     max-width: 1140px;
@@ -614,5 +747,5 @@ legend {
     transform: scale(1.1);
 }
 
-    /* /Section 4 - CONTACT*/
+       /* /Section 4 - CONTACT*/
 

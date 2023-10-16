@@ -637,6 +637,9 @@ legend {
 .modal__languages {
     margin: 20px 0;
 }
+.modal__description-list span {
+    font-weight: 700;
+}
 .modal__description p {
     font-size: clamp(.5em, 1vw, 1em);
 }
@@ -725,6 +728,9 @@ legend {
 .form__container-fieldset {
     padding: 20px;
     border-radius: 50px;
+}
+.form__container-fieldset legend {
+    padding: 0 10px;
 }
 .form__container-fieldset input,
 .form__container-fieldset textarea{

@@ -1,6 +1,23 @@
-@media screen and (max-width: 1440px) {
-    
-}
+/* LAPTOP */
+
+@media screen 
+and (min-width: 1200px)
+and (max-width: 1600px) {
+        .wrapper-items1, 
+        .wrapper-items2, 
+        .wrapper-items3, 
+        .wrapper-items4 {
+            gap: 50px;
+        }
+        #greeting {
+            font-size: clamp(.7em, 5vw, 7rem);
+        }
+        .header__container-img a img {
+            width: 75px;
+        }
+    }
+
+/* /LAPTOP */
 
 @media screen and (max-width: 1024px) {
     .wrapper-items {

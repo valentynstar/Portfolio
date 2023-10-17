@@ -66,6 +66,12 @@ and (max-width: 1600px) {
     .wrapper-items {
         gap: 50px;
     }
+    .modal__content {
+        width: 60%;
+    }
+    .projects__container-item {
+        max-width: 300px;
+    }
     .header__container {
         justify-content: space-around;
     }

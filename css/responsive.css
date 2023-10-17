@@ -1,17 +1,42 @@
-/* LAPTOP */
 
+/* DEKSTOP */
+@media screen and (min-width: 1600px) {
+    .wrapper-items1 {
+        gap: 50px;
+    }
+    .wrapper-items3 {
+        gap: 70px;
+    }
+    .about-me-container-skills, .about-me-container-info {
+        font-size: 0.8em;
+    }
+    .projects__container-item {
+        max-width: 330px;
+    }
+    .wrapper-about-page {
+        font-size: 1.2em;
+    }
+    .form__container-fieldset legend {
+        font-size: 1.6em;
+    }
+} 
+/* /DEKSTOP */
+
+/* LAPTOP */
 @media screen 
 and (min-width: 1080px)
-and (max-width: 2048px) {
+and (max-width: 1600px) {
         .wrapper-items1 {
             gap: 15px;
         }
         .wrapper-items2 {
             gap: 0px;
         }
-        .wrapper-items4,
         .wrapper-items3 {
             gap: 30px;
+        }
+        .wrapper-items4 {
+            gap: 0;
         }
         .wrapper-about-page {
             font-size: 1em;

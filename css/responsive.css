@@ -3,7 +3,9 @@
 @media screen 
 and (min-width: 1080px)
 and (max-width: 2048px) {
-        .wrapper-items1, 
+        .wrapper-items1 {
+            gap: 15px;
+        }
         .wrapper-items2 {
             gap: 0px;
         }
@@ -16,7 +18,7 @@ and (max-width: 2048px) {
         }
         .about-me-container-skills,
         .about-me-container-info {
-            font-size: .7em;
+            font-size: .8em;
         }
         .projects__container-item {
             max-width: 300px;

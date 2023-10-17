@@ -66,7 +66,7 @@ legend {
     align-items: start;
     justify-content: start;
     flex-direction: column;
-    gap: 120px;
+    gap: 80px;
     color: aqua;
     scroll-snap-align: start;
 }
@@ -189,7 +189,7 @@ legend {
     margin-top: 5px; 
 }
 .header__container-img a img {
-    max-width: 100px;
+    max-width: 75px;
     object-fit: cover;
 }
 #logo:hover {
@@ -227,7 +227,7 @@ legend {
     gap: 30px;
 }
 .nav-menu ul li a {
-    font-size: clamp(.5em, 2vw, 1.3em);
+    font-size: clamp(.3em, 2vw, 1em);
     display: inline-block;
     position: relative;
     transition: all 0.3s ease-out;
@@ -263,7 +263,7 @@ legend {
     margin-bottom: 50px;
     letter-spacing: 8px;
     text-align: center;
-    font-size: clamp(.7em, 6vw, 7rem);
+    font-size: clamp(.5em, 5vw, 6rem);
     transition: all 0.3s;
     z-index: 100;
 }
@@ -285,7 +285,7 @@ legend {
     white-space: nowrap;
     line-height: 2;
     overflow: hidden;
-    font-size: clamp(.5em, 2vw, 1.3em);
+    font-size: clamp(.3em, 2vw, 1.1em);
 }
 #greetingSecond span {
     font-weight: bold;
@@ -380,8 +380,8 @@ legend {
     transform: translate(-50%, -50%);
 }
 .arrow-down-item {
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     border: 2px solid #fff;
     border-radius: 50%;
     background: none;
@@ -392,10 +392,10 @@ legend {
 .arrow-down-item::before {
     content: '';
     position: absolute;
-    top: 15px;
-    left: 18px;
-    width: 18px;
-    height: 18px;
+    top: 7px;
+    left: 9px;
+    width: 11px;
+    height: 10px;
     border-left: 2px solid aqua;
     border-bottom: 2px solid aqua;
     transform: rotate(-45deg);
@@ -489,13 +489,16 @@ legend {
     border-image: linear-gradient(to bottom,purple,aqua ) 1 100%;
     border-right: none;
     padding-left: 10px;
-
 }
 .about-me-container-info p{
     padding: 25px 5px;
     margin-bottom: 0;
     text-align: justify;
     line-height: 1.5;
+}
+.about-me-container-skills,
+.about-me-container-info {
+    font-size: 1em;
 }
 
 .main-paragraphs-mark a {
@@ -718,7 +721,14 @@ legend {
 
 .form__container {
     max-width: 1140px;
+    font-size: clamp(.1em, 1vw, .8em);
+    margin-bottom: 20px;
 }
+.form__container input,
+.form__container textarea {
+    font-size: clamp(.1em, 1vw, .8em);
+}
+
 .form__container form{
     text-align: center;
 }

@@ -1,33 +1,44 @@
 /* LAPTOP */
 
 @media screen 
-and (min-width: 1200px)
-and (max-width: 1600px) {
+and (min-width: 1080px)
+and (max-width: 2048px) {
         .wrapper-items1, 
-        .wrapper-items2, 
-        .wrapper-items3, 
-        .wrapper-items4 {
-            gap: 50px;
+        .wrapper-items2 {
+            gap: 0px;
         }
-        #greeting {
-            font-size: clamp(.7em, 5vw, 7rem);
+        .wrapper-items4,
+        .wrapper-items3 {
+            gap: 30px;
         }
-        .header__container-img a img {
-            width: 75px;
+        .wrapper-about-page {
+            font-size: 1em;
         }
+        .about-me-container-skills,
+        .about-me-container-info {
+            font-size: .7em;
+        }
+        .projects__container-item {
+            max-width: 300px;
+        }
+        .projects__container {
+            margin: 50px 0;
+        }
+        .projectsBtn {
+
+        }
+        /* .form__container input,
+        .form__container textarea,
+        .form__container {
+            font-size: 1em;
+        } */
     }
 
 /* /LAPTOP */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
     .wrapper-items {
         gap: 50px;
-    }
-    #greeting {
-        font-size: clamp(1em, 7vw, 5rem);
-    }
-    #greetingSecond {
-        font-size: clamp(.5em, 2vw, 1em);
     }
     .header__container {
         justify-content: space-around;

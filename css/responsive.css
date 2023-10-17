@@ -64,7 +64,7 @@ and (max-width: 1600px) {
 
 @media screen and (max-width: 1080px) {
     .wrapper-items {
-        gap: 50px;
+        gap: 0px;
     }
     .modal__content {
         width: 60%;
@@ -87,6 +87,16 @@ and (max-width: 1600px) {
     }
     .about-me-container-list li {
         min-width: 100px;
+    }
+    .about-me-container div {
+        margin: 0 60px;
+    }
+    .about-me-container-info p {
+        padding: 0;
+        margin: 30px 0px;
+    }
+    .wrapper-about-page {
+        margin-bottom: 20px;
     }
 
 }

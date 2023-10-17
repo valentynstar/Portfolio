@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cinzel', 'Chakra Petch', sans-serif;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     color: #fff;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -345,8 +345,8 @@ legend {
 
 .topBtn {
     position: fixed;
-    right: 5%;
-    bottom: 10%;
+    right: 6%;
+    bottom: 12%;
     animation: topBtnMoves infinite 2.5s linear;
 }
 @keyframes topBtnMoves {
@@ -496,12 +496,15 @@ legend {
     /* flex-grow: 1; */
 }
 .about-me-container div {
-    margin: 0px 13px;
+    margin: 0px 15px;
 }
 .about-me-container-title {
     text-align: center;
     text-transform: uppercase;
     margin: 20px;
+}
+.about-me-container-text {
+    font-size: clamp(.5em, 1.2vw, 1.5em);
 }
 
 .about-me-container-info {

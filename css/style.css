@@ -504,7 +504,7 @@ legend {
     margin: 20px;
 }
 .about-me-container-text {
-    font-size: clamp(.5em, 1.2vw, 1.5em);
+    font-size: clamp(.5em, 1.2vw, 1em);
 }
 
 .about-me-container-info {
@@ -771,7 +771,7 @@ legend {
 }
 .form__container-fieldset legend {
     padding: 0 10px;
-    font-size: 1.8em;
+    font-size: 1.4em;
     transition: all 0.3s;
     font-weight: bold;
 }
@@ -791,7 +791,7 @@ legend {
     font-size: 1em;
 }
 .form__container-fieldset label {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .form__container-fieldset button {
     padding: 7px 70px;

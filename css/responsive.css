@@ -98,6 +98,13 @@ and (max-width: 1600px) {
     .modal__content img:hover {
         transform: scale(1.2);
     }
+    .wrapper-items1, 
+    .wrapper-items2,
+    .wrapper-items3,
+    .wrapper-items4 {
+        gap: 0px;
+    }
+
 }
 @media screen and (max-width: 425px) {
     .wrapper-items {

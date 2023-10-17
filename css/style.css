@@ -266,6 +266,7 @@ legend {
     font-size: clamp(.5em, 5vw, 6rem);
     transition: all 0.3s;
     z-index: 100;
+    text-align: center;
 }
 #greeting span {
     cursor: pointer;
@@ -277,7 +278,7 @@ legend {
 }
 
 #greetingSecond {
-    margin: 50px 0;
+    margin: 50px 10px;
     font-weight: 100;
     z-index: 50;
     animation: typewriter 5s steps(100) 1s both;
@@ -285,6 +286,7 @@ legend {
     white-space: nowrap;
     line-height: 2;
     overflow: hidden;
+    text-align: justify;
     font-size: clamp(.3em, 2vw, 1.1em);
 }
 #greetingSecond span {
@@ -644,12 +646,12 @@ legend {
     font-weight: 700;
 }
 .modal__description p {
-    font-size: clamp(.5em, 1vw, 1em);
+    font-size: clamp(.3em, 1vw, .8em);
 }
 .modal__description-list {
     text-align: justify;
     margin: 30px;
-    font-size: clamp(.5em, 1vw, 1em);
+    font-size: clamp(.3em, 1vw, .8em);
     max-height: 300px;
     overflow-y: scroll;
 }
@@ -665,6 +667,8 @@ legend {
     margin: 20px 0px;
     text-align: center;
     margin-inline: auto;
+    max-height: 200px;
+    overflow: auto;
 }
 .modal__content-language ul {
     display: flex;
@@ -681,6 +685,7 @@ legend {
     cursor: crosshair;
     transition: all .3s;
     letter-spacing: .1em;
+    font-size: clamp(.3em, 1vw, .8em);
 }
 .modal__content-btn {
     width: 125px;
@@ -721,12 +726,12 @@ legend {
 
 .form__container {
     max-width: 1140px;
-    font-size: clamp(.1em, 1vw, .8em);
     margin-bottom: 20px;
+    font-size: clamp(.50em, 1vw, .8em);
 }
 .form__container input,
 .form__container textarea {
-    font-size: clamp(.1em, 1vw, .8em);
+    font-size: clamp(.50em, 1vw, .8em);
 }
 
 .form__container form{

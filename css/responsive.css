@@ -27,11 +27,9 @@ and (max-width: 2048px) {
         .projectsBtn {
 
         }
-        /* .form__container input,
-        .form__container textarea,
         .form__container {
-            font-size: 1em;
-        } */
+            max-width: 767px;
+        }
     }
 
 /* /LAPTOP */
@@ -39,6 +37,9 @@ and (max-width: 2048px) {
 @media screen and (max-width: 1080px) {
     .wrapper-items {
         gap: 50px;
+    }
+    .arrow-down-item::before {
+        left: 17px;
     }
     .header__container {
         justify-content: space-around;

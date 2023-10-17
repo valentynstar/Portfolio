@@ -598,11 +598,13 @@ legend {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     width: 30%;
-    padding: 50px;
+    padding: 10px 50px;
     border: 1px solid #fff;
     border-radius: 30px;
     text-align: center;
     background: linear-gradient(180deg, rgba(32,128,123,1) 0%, rgba(7,51,73,1) 100%);
+    max-height: 1000px;
+    overflow: scroll;
 }
 .modal__content h2 {
     text-align: center;
@@ -728,6 +730,7 @@ legend {
     max-width: 1140px;
     margin-bottom: 20px;
     font-size: clamp(.50em, 1vw, .8em);
+    overflow: scroll;
 }
 .form__container input,
 .form__container textarea {

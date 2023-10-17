@@ -26,7 +26,7 @@ li {
 sub:hover,
 sup:hover {
     color: aqua;
-    cursor: pointer;
+    cursor: default;
 }
 button {
     cursor: pointer;
@@ -269,7 +269,7 @@ legend {
     text-align: center;
 }
 #greeting span {
-    cursor: pointer;
+    cursor: default;
     padding: 5px;
 }
 #greeting span:hover {
@@ -347,7 +347,26 @@ legend {
     position: fixed;
     right: 5%;
     bottom: 10%;
+    animation: topBtnMoves infinite 2.5s linear;
 }
+@keyframes topBtnMoves {
+    0% {
+        transform: translateY(10px);
+    } 
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
 .to-top{
     display: none;
     border: none;
@@ -462,7 +481,7 @@ legend {
     border-image: linear-gradient(to bottom,purple,aqua ) 1 100%;
 }
 .wrapper-about-page span {
-    cursor: pointer;
+    cursor: default;
     padding: 1px;
 }
 .wrapper-about-page span:hover {
@@ -749,6 +768,14 @@ legend {
 }
 .form__container-fieldset legend {
     padding: 0 10px;
+    font-size: 1.8em;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+.form__container-fieldset legend span:hover {
+    cursor: default;
+    color: aqua;
+    text-shadow: 1px 3px 0 #1d76ca, 1px 13px 5px #2ebfc4;
 }
 .form__container-fieldset input,
 .form__container-fieldset textarea{
@@ -759,12 +786,16 @@ legend {
     margin: 20px 0px;
     border-radius: 30px;
 }
+.form__container-fieldset label {
+    font-size: 1.2em;
+}
 .form__container-fieldset button {
-    padding: 3px 50px;
+    padding: 7px 70px;
     background: transparent;
     border: 1px solid aqua;
     transition: all 0.3s;
     border-radius: 30px;
+    background-color: #2f9786;
 }
 .form__container-fieldset button:hover {
     color: aqua;

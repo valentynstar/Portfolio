@@ -131,7 +131,6 @@ legend {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 5px; 
 }
 .header__container-img a img {
     max-width: 75px;
@@ -422,7 +421,7 @@ legend {
     border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(to bottom,purple,aqua ) 1 100%;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 .wrapper-about-page span {
     cursor: default;

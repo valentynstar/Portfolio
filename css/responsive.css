@@ -33,7 +33,7 @@ and (max-width: 1600px) {
             gap: 0px;
         }
         .wrapper-items3 {
-            gap: 30px;
+            gap: 0px;
         }
         .wrapper-items4 {
             gap: 0;
@@ -49,7 +49,7 @@ and (max-width: 1600px) {
             max-width: 300px;
         }
         .projects__container {
-            margin: 50px 0;
+            /* margin: 50px 0; */
         }
         .form__container {
             max-width: 767px;
@@ -97,7 +97,7 @@ and (max-width: 1600px) {
     }
 
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .modal__content {
         width: 100%;
         height: 100%;
@@ -111,26 +111,49 @@ and (max-width: 1600px) {
     .wrapper-items4 {
         gap: 0px;
     }
-    .header__container {
-        flex-direction: column;
-    }
     #greeting {
         margin-top: 50px;
         max-width: 767px;
     }
     #greetingSecond {
-        white-space: wrap;
         text-align: center;
         margin: 50px 0px;
-        padding: 10px;
         max-height: 70px;
         animation: typewriter 5s steps(200) 1s both;
+        max-height: 90px;
+    }
+    .about-me-container {
+        flex-wrap: wrap;
+    }
+    .about-me-container-title {
+        margin: 0;
+    }
+    .about-me-container-list,
+    .about-me-container-title {
+        margin: 10px 0;
+    }
+    .topBtn {
+        right: 8%;
+        bottom: 10%;
+    }
+    .about-me-container-text,
+    .about-me-container-list {
+        font-size: .7em;
     }
 
+}
+@media screen and (max-width: 600px) {
+    #greetingSecond {
+        white-space: wrap;
+        animation: typewriter 3s steps(200) 1s both;
+    }
 }
 @media screen and (max-width: 425px) {
     .wrapper-items {
         gap: 0px;
+    }
+    .header__container {
+        flex-direction: column;
     }
     .main-greeting {
         max-width: 425px;
@@ -138,10 +161,55 @@ and (max-width: 1600px) {
     .main-social-media ul {
         font-size: 14px;
     }
+    #greeting {
+        font-size: clamp(2.5em, 5vw, 6rem);
+    }
+    #greetingSecond {
+        padding: 0 10px;
+    }
+    .about-me-container div {
+        margin: 0 10px;
+    }
+    .wrapper-about-page {
+        font-size: 1em;
+    }
+    .about-me-container-list, .about-me-container-title {
+        margin: 0;
+    }
+    .about-me-container-title {
+        font-size: .7em;
+    }
+    .about-me-container-info {
+        border: none;
+    }
+    .topBtn  {
+        right: 12%;
+        bottom: 16%;
+    }
+    .arrow-down-item {
+        width: 40px;
+        height: 40px;
+    }
+    .arrow-down-item::before {
+        left: 9px;
+        top: 7px
+    }
+    .projects__container-item {
+        max-width: 180px;
+    }
+    .projects__container-item-button button {
+        padding: 5px 25px;
+    }
+    .form__container {
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width: 320px) {
     .header__container {
         justify-content: center;
+    }
+    #greeting {
+        font-size: clamp(2em, 5vw, 6rem);
     }
     .header__container-img a img {
         margin-bottom: 20px;

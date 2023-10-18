@@ -130,7 +130,7 @@ and (max-width: 1600px) {
 }
 @media screen and (max-width: 425px) {
     .wrapper-items {
-        gap: 100px;
+        gap: 0px;
     }
     .main-greeting {
         max-width: 425px;

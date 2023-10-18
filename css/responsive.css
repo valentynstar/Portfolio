@@ -23,9 +23,7 @@
 /* /DEKSTOP */
 
 /* LAPTOP */
-@media screen 
-and (min-width: 1080px)
-and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
         .wrapper-items1 {
             gap: 15px;
         }
@@ -60,8 +58,6 @@ and (max-width: 1600px) {
         }
     }
 
-/* /LAPTOP */
-
 @media screen and (max-width: 1080px) {
     .wrapper-items {
         gap: 0px;
@@ -85,9 +81,6 @@ and (max-width: 1600px) {
         width: 15px;
         height: 15px;
     }
-    .about-me-container-list li {
-        min-width: 100px;
-    }
     .about-me-container div {
         margin: 0 60px;
     }
@@ -95,9 +88,15 @@ and (max-width: 1600px) {
         padding: 0;
         margin: 30px 0px;
     }
+    .about-me-container-list {
+        margin: 0;
+    }
 
 }
-@media screen and (max-width: 768px) {
+/* /LAPTOP */
+
+/* TABLET */
+@media screen and (max-width: 870px) {
     .modal__content {
         width: 100%;
         height: 100%;
@@ -140,17 +139,47 @@ and (max-width: 1600px) {
     .about-me-container-list {
         font-size: .7em;
     }
+    .about-me-container-list li {
+        min-width: 120px;
+    }
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    .about-me-container-text, 
+    .about-me-container-list {
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 650px) {
     #greetingSecond {
         white-space: wrap;
         animation: typewriter 3s steps(200) 1s both;
     }
+    .about-me-container div {
+        margin: 0 10px;
+    }
+    .projects__container {
+        gap: 10px;
+    }
+    .projects__container-item-img img:hover {
+        transform: scale(1);
+    }
+    .projects__container-item {
+        max-width: 220px;
+    }
 }
+/* /TABLET */
+
+/* PHONE */
 @media screen and (max-width: 425px) {
+    .projects__container {
+        gap: 15px;
+    }
     .wrapper-items {
         gap: 0px;
+    }
+    .topBtn {
+        display: none;
     }
     .header__container {
         flex-direction: column;
@@ -162,13 +191,7 @@ and (max-width: 1600px) {
         font-size: 14px;
     }
     #greeting {
-        font-size: clamp(2.5em, 5vw, 6rem);
-    }
-    #greetingSecond {
-        padding: 0 10px;
-    }
-    .about-me-container div {
-        margin: 0 10px;
+        font-size: clamp(2.3em, 5vw, 6rem);
     }
     .wrapper-about-page {
         font-size: 1em;
@@ -177,7 +200,7 @@ and (max-width: 1600px) {
         margin: 0;
     }
     .about-me-container-title {
-        font-size: .7em;
+        font-size: .8em;
     }
     .about-me-container-info {
         border: none;
@@ -203,6 +226,29 @@ and (max-width: 1600px) {
     .form__container {
         margin-top: 30px;
     }
+    .projects__container-item-img img:hover {
+        transform: scale(1);
+    }
+    .main-social-media {
+        position: absolute;
+        top: 90%;
+        left: 35%;
+    }
+    .main-social-media ul {
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 375px) {
+    .projects__container {
+        gap: 0;
+        margin: 10px 5px;
+    }
+    .header__container-img a img {
+        width: 60px;
+    }
+    .about-me-container-text, .about-me-container-list {
+        font-size: .6em;
+    }
 }
 @media screen and (max-width: 320px) {
     .header__container {
@@ -221,11 +267,12 @@ and (max-width: 1600px) {
     #greetingSecond span:focus, #greetingSecond span:hover {
         animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in;
     }
-    .main-social-media {
-        top: 90%;
-        left: 35%;
+    .about-me-container-text, .about-me-container-list {
+        font-size: .5em;
     }
-    .main-social-media ul {
-        flex-direction: row;
+    .about-me-container-info p {
+        margin: 15px 0;
     }
 }
+
+/* /PHONE */

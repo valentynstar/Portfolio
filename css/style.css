@@ -26,11 +26,11 @@ p {
 li {
     list-style: none;
 }
-sub:hover,
+/* sub:hover,
 sup:hover {
     color: aqua;
     cursor: default;
-}
+} */
 button {
     cursor: pointer;
 }

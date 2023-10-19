@@ -179,10 +179,7 @@
 @media screen and (max-width: 425px) {
     .projects__container {
         gap: 15px;
-        position: relative;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin-top: 60px;
     }
     .mobile-responsive {
         display: none;
@@ -241,7 +238,7 @@
     }
     .projects__container-item {
         max-width: 160px;
-        margin: 0 10px;
+        margin: 10px;
     }
     .projects__container-item-button button {
         padding: 5px 25px;
@@ -370,6 +367,17 @@ and (min-width: 375px) {
     }
     .nav-menu ul {
         gap: 10px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .wrapper-about-page {
+        margin-bottom: 0px;
+    }
+    .about-me-container div {
+        margin: 10px;
+    }
+    .about-me-container-list li {
+        min-width: 100px;
     }
 }
 

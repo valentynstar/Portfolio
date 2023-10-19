@@ -91,6 +91,9 @@
     .about-me-container-list {
         margin: 0;
     }
+    .about-me-container {
+        flex-wrap: wrap;
+    }
 
 }
 /* /LAPTOP */
@@ -120,9 +123,6 @@
         max-height: 70px;
         animation: typewriter 5s steps(200) 1s both;
         max-height: 90px;
-    }
-    .about-me-container {
-        flex-wrap: wrap;
     }
     .about-me-container-title {
         margin: 0;
@@ -228,6 +228,9 @@
     }
     .projects__container-item-img img:hover {
         transform: scale(1);
+    }
+    .wrapper-items4 {
+        position: relative;
     }
     .main-social-media {
         position: absolute;

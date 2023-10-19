@@ -613,12 +613,12 @@ legend {
     font-weight: 700;
 }
 .modal__description p {
-    font-size: clamp(.6em, 1vw, .8em);
+    font-size: clamp(.7em, 1vw, .8em);
 }
 .modal__description-list {
     text-align: justify;
     margin: 30px;
-    font-size: clamp(.3em, 1vw, .8em);
+    font-size: clamp(.6em, 1vw, .8em);
     max-height: 300px;
     overflow-y: scroll;
 }
@@ -652,7 +652,7 @@ legend {
     cursor: crosshair;
     transition: all .3s;
     letter-spacing: .1em;
-    font-size: clamp(.3em, 1vw, .8em);
+    font-size: clamp(.6em, 1vw, .8em);
 }
 .modal__content-btn {
     width: 125px;

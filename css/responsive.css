@@ -181,6 +181,9 @@
     .wrapper-items {
         gap: 0px;
     }
+    .wrapper-items1 {
+        gap: 15px;
+    }
     .topBtn {
         display: none;
     }
@@ -213,7 +216,7 @@
         border: none;
     }
     .about-me-container-info p {
-        margin: 20px 0;
+        margin: 10px 0;
     }
     .topBtn  {
         right: 12%;
@@ -279,10 +282,13 @@
         width: 60px;
     }
     .about-me-container-text, .about-me-container-list {
-        font-size: .8em;
+        font-size: .7em;
     }
     .projects__container-item {
-        max-width: 170px;
+        max-width: 160px;
+    }
+    .modal__content  {
+        padding: 10px 30px;
     }
 }
 @media screen and (max-width: 320px) {
@@ -302,12 +308,24 @@
     #greetingSecond span:focus, #greetingSecond span:hover {
         animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in;
     }
-    .about-me-container-text, .about-me-container-list {
-        font-size: .7em;
-    }
     .about-me-container-info p {
         margin: 15px 0;
     }
+    .about-me-container-list li {
+        min-width: 110px;
+    }
+    .projects__container-item {
+        max-width: 129px;
+        margin: 10px;
+    }
+    .modal__content  {
+        padding: 10px 20px;
+    }
+    .modal__content p {
+        margin: 0;
+    }
+    
+    
 }
 
 /* /PHONE */

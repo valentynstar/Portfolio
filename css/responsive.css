@@ -97,6 +97,11 @@
     .about-me-container {
         flex-wrap: wrap;
     }
+    .form__container-fieldset button:hover,
+    .projects__container-item-button button:hover {
+        transform: scale(1);
+    }
+    
 
 }
 /* /LAPTOP */
@@ -131,9 +136,8 @@
     #greetingSecond {
         text-align: center;
         margin: 50px 0px;
-        max-height: 70px;
         animation: typewriter 5s steps(200) 1s both;
-        max-height: 90px;
+        max-height: 40px;
     }
     .about-me-container-title {
         margin: 0;
@@ -331,7 +335,7 @@ and (min-width: 375px) {
         margin-bottom: 20px;
     }
     #greetingSecond {
-        max-height: 85px;
+        max-height: 37px;
         animation: typewriter 2s steps(200) 1s both;
     }
     #greetingSecond span:focus, #greetingSecond span:hover {

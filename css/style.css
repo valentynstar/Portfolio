@@ -444,7 +444,7 @@ legend {
 .about-me-container-title {
     text-align: center;
     text-transform: uppercase;
-    margin: 20px;
+    margin: 10px;
 }
 .about-me-container-text {
     font-size: clamp(.5em, 1.2vw, 1em);

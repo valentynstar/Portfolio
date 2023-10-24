@@ -231,15 +231,15 @@ legend {
     text-align: justify;
     font-size: clamp(.7em, 2vw, 1.1em);
 }
-#greetingSecond span {
+#greetingSecond .greetingSecondBold {
     font-weight: bold;
     cursor: crosshair;
     padding: 15px 10px;
     border-radius: 50px;
     transition: all 0.3s;
 }
-#greetingSecond span:focus,
-#greetingSecond span:hover {
+#greetingSecond .greetingSecondBold:focus,
+#greetingSecond .greetingSecondBold:hover {
     animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in, hoverShine 250ms;
 }
 
@@ -592,7 +592,7 @@ legend {
     transition: all .6s;
 }
 .modal__content img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 .close:hover,
 .close:focus {

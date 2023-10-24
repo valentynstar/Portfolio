@@ -57,4 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // /Projects Buttons
 
+    // Add <br> for 425px widthScreen 
+    
+    function addBrTagIfScreenWidthIs425px() {
+        if(window.innerWidth <= 425) {
+            const br = document.createElement('br');
+            const greetingSecondForBr = document.querySelector('.forBr');
+
+            greetingSecondForBr.appendChild(br);
+        }
+    }
+
+    window.addEventListener('load', addBrTagIfScreenWidthIs425px);
+    window.addEventListener('resize', addBrTagIfScreenWidthIs425px);
+    
+    // /Add <br> for 425px widthScreen 
+
 });

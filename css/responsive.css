@@ -168,7 +168,7 @@
 @media screen and (max-width: 650px) {
     #greetingSecond {
         white-space: wrap;
-        animation: typewriter 3s steps(200) 1s both;
+        animation: typewriter 2s steps(200) 1s both;
     }
     .about-me-container div {
         margin: 0 10px;
@@ -192,6 +192,14 @@
     }
 }
 @media screen and (max-width: 425px) {
+    .header__container-img {
+        position: relative;
+        right: 10px;
+        margin-top: 10px;
+    }
+    #greetingSecond .greetingSecondBold:focus, #greetingSecond .greetingSecondBold:hover {
+        animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in, hoverShine 0ms;
+    }
     .projects__container {
         gap: 15px;
         margin-top: 60px;
@@ -214,8 +222,11 @@
     .main-greeting {
         max-width: 425px;
     }
+    .main-social-media ul li {
+        margin: 10px;
+    }
     .main-social-media ul {
-        font-size: 20px;
+        font-size: 22px;
     }
     #greeting {
         font-size: clamp(2.3em, 5vw, 6rem);

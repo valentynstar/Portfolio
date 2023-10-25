@@ -26,11 +26,11 @@ p {
 li {
     list-style: none;
 }
-/* sub:hover,
+sub:hover,
 sup:hover {
     color: aqua;
     cursor: default;
-} */
+}
 button {
     cursor: pointer;
 }
@@ -356,8 +356,8 @@ legend {
     content: '';
     position: absolute;
     top: 7px;
-    left: 9.2px;
-    width: 11px;
+    left: 9px;
+    width: 10px;
     height: 10px;
     border-left: 2px solid aqua;
     border-bottom: 2px solid aqua;

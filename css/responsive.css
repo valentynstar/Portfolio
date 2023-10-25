@@ -137,7 +137,6 @@
         text-align: center;
         margin: 50px 0px;
         animation: typewriter 5s steps(200) 1s both;
-        max-height: 40px;
     }
     .about-me-container-title {
         margin: 0;
@@ -168,7 +167,8 @@
 @media screen and (max-width: 650px) {
     #greetingSecond {
         white-space: wrap;
-        animation: typewriter 2s steps(200) 1s both;
+        /* animation: typewriter 2s steps(200) 1s both; */
+        animation: none;
     }
     .about-me-container div {
         margin: 0 10px;
@@ -193,9 +193,11 @@
 }
 @media screen and (max-width: 425px) {
     .header__container-img {
-        position: relative;
-        right: 10px;
         margin-top: 10px;
+    }
+    .header__container-menu {
+        position: relative;
+        left: 10px;
     }
     #greetingSecond .greetingSecondBold:focus, #greetingSecond .greetingSecondBold:hover {
         animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in, hoverShine 0ms;
@@ -226,7 +228,7 @@
         margin: 10px;
     }
     .main-social-media ul {
-        font-size: 22px;
+        font-size: 18px;
     }
     #greeting {
         font-size: clamp(2.3em, 5vw, 6rem);
@@ -289,7 +291,7 @@
     }
     .main-social-media {
         position: absolute;
-        top: 97%;
+        top: 96%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -306,7 +308,6 @@
     }
     
 }
-
 @media screen 
 and (max-width: 425px)
 and (min-width: 375px) {
@@ -314,7 +315,6 @@ and (min-width: 375px) {
         margin-top: 20px;
     }
 }
-
 @media screen and (max-width: 375px) {
     .projects__container {
         gap: 0;
@@ -330,6 +330,16 @@ and (min-width: 375px) {
     }
     .modal__content  {
         padding: 10px 30px;
+    }
+    .arrow-down-item {
+        width: 25px;
+        height: 25px;
+    }
+    .arrow-down-item::before {
+        width: 8px;
+        height: 8px;
+        left: 5.9px;
+        top: 3px;
     }
 }
 @media screen and (max-width: 320px) {
@@ -347,7 +357,20 @@ and (min-width: 375px) {
     }
     #greetingSecond {
         max-height: 37px;
-        animation: typewriter 2s steps(200) 1s both;
+        /* animation: typewriter 2s steps(200) 1s both; */
+        -webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+    }
+    .arrow-down-item::before {
+        left: 5.9px;
+        top: 4px;
+    }
+    .arrow-down-item::before {
+        width: 7px;
+        height: 7px;
     }
     #greetingSecond span:focus, #greetingSecond span:hover {
         animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in;

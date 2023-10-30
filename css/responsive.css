@@ -74,16 +74,6 @@
     .header__container {
         justify-content: space-around;
     }
-    .arrow-down-item {
-        width: 50px;
-        height: 50px;
-    }
-    .arrow-down-item::before {
-        left: 14px;
-        top: 11px;
-        width: 15px;
-        height: 15px;
-    }
     .about-me-container div {
         margin: 0 60px;
     }
@@ -162,6 +152,16 @@
     .about-me-container-text, 
     .about-me-container-list {
         font-size: .7em;
+    }
+    .arrow-down-item {
+        width: 35px;
+        height: 35px;
+    }
+    .arrow-down-item::before {
+        width: 10px;
+        height: 10px;
+        left: 9px;
+        top: 7px;
     }
 }
 @media screen and (max-width: 650px) {
@@ -257,12 +257,14 @@
         bottom: 16%;
     }
     .arrow-down-item {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .arrow-down-item::before {
-        left: 9px;
-        top: 7px
+        left: 7px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
     }
     .projects__container-item {
         max-width: 160px;
@@ -310,7 +312,7 @@
 }
 @media screen 
 and (max-width: 425px)
-and (min-width: 375px) {
+and (min-width: 376px) {
     .about-me-container-title {
         margin-top: 20px;
     }

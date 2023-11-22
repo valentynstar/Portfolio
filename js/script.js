@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
     const wrapper = document.querySelector('.wrapper');
 
+    window.addEventListener('load', addBrTagIfScreenWidthIs425px);
+    // window.addEventListener('resize', addBrTagIfScreenWidthIs425px);
     scrollToTopBtn.addEventListener('click', scrollToTop);
 
     function scrollToTop() {
@@ -67,9 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
             greetingSecondForBr.appendChild(br);
         }
     }
-
-    window.addEventListener('load', addBrTagIfScreenWidthIs425px);
-    // window.addEventListener('resize', addBrTagIfScreenWidthIs425px);
     
     // /Add <br> for 425px widthScreen 
 

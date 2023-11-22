@@ -160,6 +160,9 @@
         left: 9px;
         top: 7px;
     }
+    #greetingSecond {
+        font-size: clamp(.7em, 1.5vw, 1.1em);
+    }
 }
 @media screen and (max-width: 650px) {
     #greetingSecond {

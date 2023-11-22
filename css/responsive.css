@@ -72,7 +72,7 @@
         justify-content: space-around;
     }
     .about-me-container div {
-        margin: 0 60px;
+        margin: 10px 60px;
     }
     .about-me-container-info p {
         padding: 0;
@@ -168,7 +168,7 @@
         animation: none;
     }
     .about-me-container div {
-        margin: 0 10px;
+        margin: 10px;
     }
     .projects__container {
         gap: 10px;
@@ -255,7 +255,7 @@
     }
     .arrow-down-item {
         width: 30px;
-        height: 30px;
+        height: 31px;
     }
     .arrow-down-item::before {
         left: 7px;
@@ -330,15 +330,11 @@ and (min-width: 376px) {
     .modal__content  {
         padding: 10px 30px;
     }
-    .arrow-down-item {
-        width: 25px;
-        height: 25px;
-    }
     .arrow-down-item::before {
-        width: 8px;
-        height: 8px;
-        left: 5.9px;
-        top: 3px;
+        width: 10px;
+        height: 10px;
+        left: 7px;
+        top: 5px;
     }
 }
 @media screen and (max-width: 320px) {
@@ -362,14 +358,6 @@ and (min-width: 376px) {
 		-o-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
-    }
-    .arrow-down-item::before {
-        left: 5.9px;
-        top: 4px;
-    }
-    .arrow-down-item::before {
-        width: 7px;
-        height: 7px;
     }
     #greetingSecond span:focus, #greetingSecond span:hover {
         animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in;

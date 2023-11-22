@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', 'Chakra Petch', sans-serif;
+    /* outline: 1px solid red; */
+    color: #fff;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -o-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{
+    background: rgb(100,32,128);
+    background: linear-gradient(0deg, rgba(100,32,128,1) 0%, rgba(14,112,145,1) 100%);
+    position: relative;
+}
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    image-rendering: optimizeQuality;
+}
+
+.wrapper__container {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(28,111,121);
+    background: radial-gradient(circle, rgba(28,111,121,1) 0%, rgba(35,115,159,1) 100%);
+    text-align: center;
+    padding: 50px;
+    border-radius: 10%;
+    text-align: center;
+    margin-inline: auto;
+        -webkit-box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
+    -moz-box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
+    box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
+}
+.wrapper__container__back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all .3s;
+}
+
+.wrapper__container img {
+    width: 100px;
+}
+.wrapper__container h1 {
+    font-size: 40px;
+}
+.wrapper__container img,
+.wrapper__container h1,
+.wrapper__container h4 {
+    padding: 10px;
+}

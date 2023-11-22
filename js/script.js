@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('load', addBrTagIfScreenWidthIs425px);
-    window.addEventListener('resize', addBrTagIfScreenWidthIs425px);
+    // window.addEventListener('resize', addBrTagIfScreenWidthIs425px);
     
     // /Add <br> for 425px widthScreen 
 

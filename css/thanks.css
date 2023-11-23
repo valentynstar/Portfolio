@@ -14,7 +14,6 @@
 body{
     background: rgb(100,32,128);
     background: linear-gradient(0deg, rgba(100,32,128,1) 0%, rgba(14,112,145,1) 100%);
-    position: relative;
 }
 img {
     max-width: 100%;
@@ -32,22 +31,33 @@ img {
     transform: translate(-50%, -50%);
     background: rgb(28,111,121);
     background: radial-gradient(circle, rgba(28,111,121,1) 0%, rgba(35,115,159,1) 100%);
-    text-align: center;
     padding: 50px;
     border-radius: 10%;
     text-align: center;
     margin-inline: auto;
         -webkit-box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
-    -moz-box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
+      -moz-box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
+     -o-box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
     box-shadow: 0px 0px 16px 18px rgba(34, 60, 80, 0.33);
 }
 .wrapper__container__back {
     position: absolute;
     top: 20px;
     left: 20px;
+}
+.wrapper__container__back a {
+    font-weight: bold;
+    text-transform: uppercase;
     transition: all .3s;
 }
-
+.wrapper__container__back a::before {
+    content: '\f060';
+    font-family: 'Font Awesome 5 Free';
+    padding-right: 5px;
+}
+.wrapper__container__back a:hover {
+    color: rgb(255, 0, 212);
+}
 .wrapper__container img {
     width: 100px;
 }

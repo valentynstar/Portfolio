@@ -195,6 +195,9 @@
     .header__container-img {
         margin-top: 10px;
     }
+    .header__container-img a img {
+        margin-bottom: 20px;
+    }
     .header__container-menu {
         position: relative;
         left: 10px;
@@ -248,6 +251,7 @@
     }
     .about-me-container-info {
         border: none;
+        padding-left: 0;
     }
     .about-me-container-info p {
         margin: 10px 0;
@@ -347,26 +351,37 @@ and (min-width: 376px) {
     #greeting {
         font-size: clamp(1.5em, 5vw, 6rem);
     }
+    .arrow-down-item {
+        width: 22px;
+        height: 22px;
+    }
     .header__container-menu {
         margin: 0;
     }
-    .header__container-img a img {
-        margin-bottom: 20px;
+    .arrow-down-item::before {
+        width: 6px;
+        height: 6px;
+        left: 5px;
+        top: 3px;
     }
     #greetingSecond {
-        max-height: 37px;
+        max-height: 80px;
         /* animation: typewriter 2s steps(200) 1s both; */
         -webkit-animation: none !important;
 		-moz-animation: none !important;
 		-o-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
+        margin: 15px 0 40px 0;
     }
     #greetingSecond span:focus, #greetingSecond span:hover {
         animation: borderPulse 1000ms infinite ease-out, colorShift 5000ms infinite ease-in;
     }
     .about-me-container-info p {
-        margin: 15px 0;
+        margin: 5px 0;
+    }
+    .about-me-container-list { 
+        margin-top: 10px;
     }
     .about-me-container-list li {
         min-width: 110px;
@@ -381,6 +396,9 @@ and (min-width: 376px) {
     }
     .modal__content p {
         margin: 0;
+    }
+    .nav-menu ul li {
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 300px) {
@@ -407,8 +425,6 @@ and (min-width: 376px) {
     .nav-menu ul {
         gap: 10px;
     }
-}
-@media screen and (max-width: 300px) {
     .wrapper-about-page {
         margin-bottom: 0px;
     }
@@ -419,5 +435,103 @@ and (min-width: 376px) {
         min-width: 100px;
     }
 }
+@media screen and (max-width: 250px) {
+    .main-greeting {
+        margin-top: -10px;
+    }
+    #greeting {
+        font-size: 20px;
+    }
+    .nav-menu ul li {
+        font-size: 12px;
+    }
+    #greetingSecond {
+        margin: -20px 10px 40px 10px;
+        font-size: 10px;
+    }
+    .header__container-menu {
+        left: 4px;
+    }
+    .about-me-container-list li {
+        min-width: 95px;
+    }
+}
+@media screen and (max-width: 240px) {
+    .wrapper-about-page {
+        margin-top: 10px;
+        font-size: .7em;
+    }
+    .projects__container {
+        margin-top: 10px;
+    }
+    .projects__container-item-button button {
+        margin: 1px;
+    }
+    .header__container-img a img {
+        margin-right: 10px;
+    }
+    .about-me-container div {
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 200px) {
+    #greeting {
+        font-size: 12px;
+    }
+    #greetingSecond {
+        font-size: 7px;
+    }
+    .main-social-media ul {
+        font-size: 10px;
+    }
+    .projectsBtn {
+        font-size: 8px;
+    }
+    .form__container-fieldset {
+        padding: 0;
+    }
+    .form__container-fieldset input, .form__container-fieldset textarea {
+        font-size: .8em;
+    }
+    .form__container-fieldset legend {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .form__container-fieldset button {
+        padding: 5px 35px;
+        margin-bottom: 10px;
+        font-size: 8px;
+    }
+}
 
+@media screen and (max-width: 185px) {
+    .wrapper-about-page {
+        margin-top: 5px;
+    }
+    .nav-menu ul li {
+        font-size: 8px;
+    }
+    .main-greeting {
+        margin-top: -25px;
+    }
+    .projects__container-item-img img {
+        width: 80px;
+    }
+    .projects__container-item-img img {
+        width: 65px;
+    }
+    .projects__container button{
+        padding: 5px 10px;
+    }
+    .about-me-container-text, .about-me-container-list {
+        font-size: 0.1em;
+    }
+    .about-me-container-list li {
+        min-width: 65px;
+    }
+    .about-me-container-title {
+        font-size: .6em;
+    }
+    
+}
 /* /PHONE */

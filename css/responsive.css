@@ -473,6 +473,24 @@ and (min-width: 376px) {
     .about-me-container div {
         margin: 5px;
     }
+    .modal__content h2 {
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .modal__description h4 {
+        font-size: 12px;
+    }
+    .modal__description p {
+        font-size: 10px;
+    }
+    .modal__description-list {
+        font-size: 8px;
+    }
+    .modal__content-btn button {
+        padding: 10px;
+        margin: 15px;
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 200px) {
     #greeting {

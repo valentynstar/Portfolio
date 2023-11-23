@@ -492,6 +492,15 @@ and (min-width: 376px) {
         font-size: 12px;
     }
 }
+@media screen and (min-width: 185px) and (max-width: 240px) {
+    .projects__container-item-img img {
+        width: 75px;
+    }
+    .projects__container-item-button button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 200px) {
     #greeting {
         font-size: 12px;
@@ -550,6 +559,14 @@ and (min-width: 376px) {
     .about-me-container-title {
         font-size: .6em;
     }
-    
 }
+@media screen and (max-width: 155px) {
+    #greeting {
+        font-size: 10px;
+    }
+    #greetingSecond {
+        font-size: 6px;
+    }
+}
+
 /* /PHONE */
